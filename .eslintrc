@@ -1,0 +1,10 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "jsx-a11y/href-no-hash": "off",
+    "linebreak-style": ["error", "windows"]
+  },
+  "env": {
+    "browser": true
+  }
+}
