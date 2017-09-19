@@ -3,7 +3,7 @@
 This project runs under _node_ with an _express_ server for managing the database and a front end 
 created using _Create React App_ running in _ES6_ using _Babel_.  It provides a simple address
 book for user that includes organisation and contacts within those organisation.  Data is stored
-using a simple persistent database under []NeDB](https://github.com/louischatriot/nedb)
+using a simple persistent database under [NeDB](https://github.com/louischatriot/nedb)
 
 ## Setup
 
