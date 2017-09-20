@@ -3,6 +3,7 @@ import { createActionThunk } from 'redux-thunk-actions';
 
 import actions from '../constants/actionConstants';
 import uiActions from './ui-actions';
+import formActions from './form-actions';
 import requestActions from './data-request-actions';
 import Client from '../network/Client';
 import selectors from '../selectors';
@@ -17,6 +18,23 @@ const setContactFormEmail = createAction(actions.SET_CONTACT_FORM_EMAIL);
 const setOrganisationFormName = createAction(actions.SET_ORGANISATION_FORM_NAME);
 const setOrganisationFormTelephone = createAction(actions.SET_ORGANISATION_FORM_TELEPHONE);
 const setOrganisationFormEmail = createAction(actions.SET_ORGANISATION_FORM_EMAIL);
+
+const setDefault = (thunkWare) => {
+  const state = thunkWare.getState();
+  const existingId = selectors.getContactFormOrganisation(state);
+  if (!existingId) {
+    /* eslint-disable no-underscore-dangle */
+    const defaultId = selectors.getOrganisationList(state)[0]._id;
+    thunkWare.dispatch(formActions.setContactFormOrganisation(defaultId));
+    /* eslint-enble no-underscore-dangle */
+  }
+  return Promise.resolve();
+};
+
+const setDefaultContactFormOrganisation = createActionThunk(
+  actions.SET_DEFAULT_CONTACT_FORM_ORGANISATION,
+  setDefault,
+);
 
 const getFormContactData = state => ({
   forename: selectors.getContactFormForename(state),
@@ -51,6 +69,9 @@ const submitContact = (thunkWare) => {
   });
 };
 
+const submitContactEdit = createActionThunk(actions.SUBMIT_CONTACT_EDIT, editContact);
+const submitContactForm = createActionThunk(actions.SUBMIT_CONTACT_FORM, submitContact);
+
 const getOrganisationFormData = state => ({
   name: selectors.getOrganisationFormName(state),
   telephone: selectors.getOrganisationFormTelephone(state),
@@ -81,9 +102,6 @@ const submitOrganisation = (thunkWare) => {
     thunkWare.dispatch(requestActions.requestOrganisationList());
   });
 };
-
-const submitContactEdit = createActionThunk(actions.SUBMIT_CONTACT_EDIT, editContact);
-const submitContactForm = createActionThunk(actions.SUBMIT_CONTACT_FORM, submitContact);
 const submitOrganisationEdit = createActionThunk(
   actions.SUBMIT_ORGANISATION_EDIT, editOrganisation,
 );
@@ -99,6 +117,7 @@ export default {
   setContactFormOrganisation,
   setContactFormTelephone,
   setContactFormEmail,
+  setDefaultContactFormOrganisation,
   setOrganisationFormName,
   setOrganisationFormTelephone,
   setOrganisationFormEmail,

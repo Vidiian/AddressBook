@@ -19,13 +19,9 @@ const initialState = {
   isOrganisationValid: false,
 };
 
-const validateContact = (contact) => {
-  return !!contact.surname;
-};
+const validateContact = contact => !!contact.surname;
 
-const validateOrganisation = (organisation) => {
-  return !!organisation.name;
-};
+const validateOrganisation = organisation => !!organisation.name;
 
 const setContactProperty = (state, newValue) => {
   const newContact = { ...state.contact, ...newValue };
@@ -41,11 +37,11 @@ const setOrganisationProperty = (state, newValue) => {
   };
 };
 
-const clearContactData = (state) => (
+const clearContactData = state => (
   { ...state, contact: initialState.contact, isContactValid: false }
 );
 
-const clearOrganisationData = (state) => (
+const clearOrganisationData = state => (
   { ...state, organisation: initialState.organisation, isOrganisationValid: false }
 );
 

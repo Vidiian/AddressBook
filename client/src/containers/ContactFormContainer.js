@@ -14,9 +14,7 @@ const mapStateToProps = (state) => ({
   forename: selectors.getContactFormForename(state),
   surname: selectors.getContactFormSurname(state),
   organisations: selectors.getOrganisationList(state),
-  /* eslint-disable no-underscore-dangle */
   selectedOrganisationId: selectors.getContactFormOrganisation(state),
-  /* eslint-enable no-underscore-dangle */
   telephone: selectors.getContactFormTelephone(state),
   email: selectors.getContactFormEmail(state),
   validSurname: getSurnameValidation(selectors.getContactFormSurname(state)),

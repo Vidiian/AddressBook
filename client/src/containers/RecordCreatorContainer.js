@@ -14,24 +14,30 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  onShowContactCreator: () => (
-    dispatch(uiActions.showContactCreator())
-  ),
-  onHideContactCreator: () => (
-    dispatch(uiActions.hideContactCreator())
-  ),
-  onSubmitContactForm: () => (
-    dispatch(formActions.submitContactForm())
-  ),
-  onSubmitOrganisationForm: () => (
-    dispatch(formActions.submitOrganisationForm())
-  ),
+  onShowContactCreator: () => {
+    dispatch(formActions.setDefaultContactFormOrganisation()).then(() =>
+      dispatch(uiActions.showContactCreator()),
+    );
+  },
+  onHideContactCreator: () => {
+    dispatch(uiActions.hideContactCreator());
+    dispatch(formActions.clearContactFormData());
+  },
+  onSubmitContactForm: () => {
+    dispatch(formActions.submitContactForm());
+    dispatch(formActions.clearContactFormData());
+  },
+  onSubmitOrganisationForm: () => {
+    dispatch(formActions.submitOrganisationForm());
+    dispatch(formActions.clearContactFormData());
+  },
   onShowOrganisationCreator: () => (
     dispatch(uiActions.showOrganisationCreator())
   ),
-  onHideOrganisationCreator: () => (
-    dispatch(uiActions.hideOrganisationCreator())
-  ),
+  onHideOrganisationCreator: () => {
+    dispatch(uiActions.hideOrganisationCreator());
+    dispatch(formActions.clearContactFormData());
+  },
 });
 
 const OrganisationDisplayContainer = connect(

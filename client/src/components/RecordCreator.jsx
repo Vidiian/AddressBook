@@ -53,6 +53,7 @@ const RecordCreator = ({
 );
 
 RecordCreator.propTypes = {
+  isAbleToAddContacts: PropTypes.bool.isRequired,
   isContactValid: PropTypes.bool.isRequired,
   isCreatingContact: PropTypes.bool.isRequired,
   isCreatingOrganisation: PropTypes.bool.isRequired,

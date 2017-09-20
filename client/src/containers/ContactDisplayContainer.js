@@ -15,7 +15,7 @@ const mapStateToProps = (state) => {
     const contactOrganisation = selectors.getOrganisation(state, contact.organisation);
     props.organisationName = contactOrganisation.name;
   }
-  return { ...props  };
+  return { ...props };
 };
 
 const mapDispatchToProps = dispatch => ({

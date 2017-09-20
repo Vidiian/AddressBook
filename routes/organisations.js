@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
     if (docs.length > 0) {
       res.send(docs);
     } else {
-      res.send('no users found');
+      res.send('no organisations found');
     }
   });
 });
