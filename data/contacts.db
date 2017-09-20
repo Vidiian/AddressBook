@@ -1,17 +1,17 @@
 {"name":"Justice League","type":"organisation","_id":"2QTqpGWFd3muoffb","telephone":"555-1234567","email":"jl@watchtower.net"}
-{"forename":"Bruce","surname":"Wayne","organisation":"2QTqpGWFd3muoffb","type":"user","_id":"4GOESkbbMpr69Ape","telephone":"555 193905","email":"batman@watchtower.net"}
-{"forename":"Diana","surname":"Prince","organisation":"2QTqpGWFd3muoffb","type":"user","_id":"5nmsPllEar8DHeEL","telephone":"555 194110","email":"wonder.woman@watchtower.net"}
-{"forename":"Arthur","surname":"Curry","organisation":"2QTqpGWFd3muoffb","type":"user","_id":"C9zZnAsheS1eXBZj","telephone":"555 194111","email":"aquaman@watchtower.net"}
-{"forename":"Jean-Luc","surname":"Picard","organisation":"nKwwxMEymZhr18XE","type":"user","_id":"FY5A4cbF1KYt8UKk","telephone":"+44 1701 0207","email":"enterprise_d@federation.net"}
-{"forename":"Clark","surname":"Kent","organisation":"2QTqpGWFd3muoffb","type":"user","_id":"KfPFBdEhqdaVVWoe","telephone":"555 193806","email":"superman@watchtower.net"}
-{"forename":"James","surname":"Kirk","organisation":"nKwwxMEymZhr18XE","type":"user","_id":"VhhMczEeUTsQkjIc","telephone":"+44 1701 0103","email":"enterprise@federation.net"}
-{"forename":" Red","surname":"Ranger","organisation":"dWL4Q66fHm1ooogb","type":"user","_id":"bHaiaPTubZW9KBrQ","telephone":"555 2000 001","email":"rr@zordon.et"}
+{"forename":"Bruce","surname":"Wayne","organisation":"2QTqpGWFd3muoffb","type":"contact","_id":"4GOESkbbMpr69Ape","telephone":"555 193905","email":"batman@watchtower.net"}
+{"forename":"Diana","surname":"Prince","organisation":"2QTqpGWFd3muoffb","type":"contact","_id":"5nmsPllEar8DHeEL","telephone":"555 194110","email":"wonder.woman@watchtower.net"}
+{"forename":"Arthur","surname":"Curry","organisation":"2QTqpGWFd3muoffb","type":"contact","_id":"C9zZnAsheS1eXBZj","telephone":"555 194111","email":"aquaman@watchtower.net"}
+{"forename":"Jean-Luc","surname":"Picard","organisation":"nKwwxMEymZhr18XE","type":"contact","_id":"FY5A4cbF1KYt8UKk","telephone":"+44 1701 0207","email":"enterprise_d@federation.net"}
+{"forename":"Clark","surname":"Kent","organisation":"2QTqpGWFd3muoffb","type":"contact","_id":"KfPFBdEhqdaVVWoe","telephone":"555 193806","email":"superman@watchtower.net"}
+{"forename":"James","surname":"Kirk","organisation":"nKwwxMEymZhr18XE","type":"contact","_id":"VhhMczEeUTsQkjIc","telephone":"+44 1701 0103","email":"enterprise@federation.net"}
+{"forename":" Red","surname":"Ranger","organisation":"dWL4Q66fHm1ooogb","type":"contact","_id":"bHaiaPTubZW9KBrQ","telephone":"555 2000 001","email":"rr@zordon.et"}
 {"name":" Power Rangers","type":"organisation","_id":"dWL4Q66fHm1ooogb","telephone":"555-8881234","email":"rangers@zordon.com"}
-{"forename":"Kathryn","surname":"Janeway","organisation":"nKwwxMEymZhr18XE","type":"user","_id":"gWPUJLMNMpdS33Im","telephone":"+44 74656 0407","email":"voyager@federation.net"}
-{"forename":"Yellow","surname":"Ranger","organisation":"dWL4Q66fHm1ooogb","type":"user","_id":"gsYt0iVSnKRHwfBt","telephone":"555 2000 002","email":"yr@zordon.net"}
-{"forename":"Blue","surname":"Ranger","organisation":"dWL4Q66fHm1ooogb","type":"user","_id":"j87Gq5smI2knagJY","telephone":"555 2000 003","email":"br@zordon.net"}
-{"forename":"Black","surname":"Ranger","organisation":"dWL4Q66fHm1ooogb","type":"user","_id":"n4V7RRITSF8Y8wsY","telephone":"555 2000 004","email":"br2@zordon.net"}
+{"forename":"Kathryn","surname":"Janeway","organisation":"nKwwxMEymZhr18XE","type":"contact","_id":"gWPUJLMNMpdS33Im","telephone":"+44 74656 0407","email":"voyager@federation.net"}
+{"forename":"Yellow","surname":"Ranger","organisation":"dWL4Q66fHm1ooogb","type":"contact","_id":"gsYt0iVSnKRHwfBt","telephone":"555 2000 002","email":"yr@zordon.net"}
+{"forename":"Blue","surname":"Ranger","organisation":"dWL4Q66fHm1ooogb","type":"contact","_id":"j87Gq5smI2knagJY","telephone":"555 2000 003","email":"br@zordon.net"}
+{"forename":"Black","surname":"Ranger","organisation":"dWL4Q66fHm1ooogb","type":"contact","_id":"n4V7RRITSF8Y8wsY","telephone":"555 2000 004","email":"br2@zordon.net"}
 {"name":"Starfleet","type":"organisation","_id":"nKwwxMEymZhr18XE","telephone":"+44 1701 0105","email":"fleet@federation.net"}
-{"forename":"Green","surname":"Ranger","organisation":"dWL4Q66fHm1ooogb","telephone":"555 2000 005","email":"gr@zordon.net","type":"user","_id":"rKRvpEZX91pKSwO4"}
-{"forename":"Jonathan","surname":"Archer","organisation":"nKwwxMEymZhr18XE","type":"user","_id":"uRonBEKGZXELSpFt","telephone":"+44 01 0504","email":"enterprise.nx@federation.net"}
-{"forename":"Benjamin","surname":"Sisko","organisation":"nKwwxMEymZhr18XE","type":"user","_id":"ymawLZDtHvK4dSox","telephone":"+44 9 0307","email":"terak.nor@federation.net"}
+{"forename":"Green","surname":"Ranger","organisation":"dWL4Q66fHm1ooogb","telephone":"555 2000 005","email":"gr@zordon.net","type":"contact","_id":"rKRvpEZX91pKSwO4"}
+{"forename":"Jonathan","surname":"Archer","organisation":"nKwwxMEymZhr18XE","type":"contact","_id":"uRonBEKGZXELSpFt","telephone":"+44 01 0504","email":"enterprise.nx@federation.net"}
+{"forename":"Benjamin","surname":"Sisko","organisation":"nKwwxMEymZhr18XE","type":"contact","_id":"ymawLZDtHvK4dSox","telephone":"+44 9 0307","email":"terak.nor@federation.net"}
