@@ -11,10 +11,10 @@ import './AddressBook.css';
 const AddressBook = ({
   title, userCount,
 }) => (
-  <div className="App">
-    <Jumbotron>
+  <div className="address-book">
+    <Jumbotron className="address-book__header">
       <h1>{title} Demo</h1>
-      <p>Manage yout contacts and their organisations here, storing your data for later use.</p>
+      <p>Manage your contacts and their organisations here, storing your data for later use.</p>
     </Jumbotron>
     <Grid>
       <Row>

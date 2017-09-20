@@ -6,10 +6,12 @@ import OrganisationDisplayContainer from '../containers/OrganisationDisplayConta
 import ContactDisplayContainer from '../containers/ContactDisplayContainer';
 import uiConstants from '../constants/uiConstants';
 
+import './DisplaySection.css';
+
 const DisplaySection = ({
   displayOption,
 }) => (
-  <Panel>
+  <Panel className="display-section">
     {displayOption === uiConstants.DISPLAY_ORGANISATION &&
       <OrganisationDisplayContainer />
     }

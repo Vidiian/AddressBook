@@ -25,8 +25,8 @@ const mapDispatchToProps = dispatch => ({
       dispatch(formActions.setContactFormOrganisation(contact.organisation));
     }
     if (contact.forename) dispatch(formActions.setContactFormForename(contact.forename));
-    if (contact.telephone) dispatch(formActions.setContactFormForename(contact.telephone));
-    if (contact.email) dispatch(formActions.setContactFormForename(contact.email));
+    if (contact.telephone) dispatch(formActions.setContactFormTelephone(contact.telephone));
+    if (contact.email) dispatch(formActions.setContactFormEmail(contact.email));
     dispatch(uiActions.showContactEditor());
   },
   onDeleteContact: contactId => (

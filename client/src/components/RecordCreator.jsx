@@ -8,6 +8,7 @@ import OrganisationFormContainer from '../containers/OrganisationFormContainer';
 import './RecordCreator.css';
 
 const RecordCreator = ({
+  isAbleToAddContacts,
   isCreatingContact,
   isCreatingOrganisation,
   isContactValid,
@@ -20,7 +21,9 @@ const RecordCreator = ({
   onHideOrganisationCreator,
 }) => (
   <ButtonToolbar className={'address-book__record-creator'}>
-    <Button onClick={onShowContactCreator} bsStyle="primary">Add Contact</Button>
+    <Button onClick={onShowContactCreator} disabled={!isAbleToAddContacts} bsStyle="primary">
+      Add Contact
+    </Button>
     <Button onClick={onShowOrganisationCreator} bsStyle="primary">Add Organisation</Button>
     <Modal show={isCreatingContact} bsSize="sm" aria-labelledby="contained-modal-title-lg">
       <Modal.Header onHide={onHideContactCreator} closeButton>

@@ -4,7 +4,7 @@ import { Accordion, Panel } from 'react-bootstrap';
 
 import ContactsListContainer from '../containers/ContactsListContainer';
 
-// import './EntryList.css';
+import './EntryList.css';
 
 const EntryList = ({
   organisations, organisationSelected,
@@ -19,6 +19,7 @@ const EntryList = ({
         id={organisation._id}
         onSelect={() => organisationSelected(organisation._id)}
         key={organisation._id}
+        className="address-book__entry-list-entry"
       >
         <ContactsListContainer organisationId={organisation._id} />
       </Panel>),

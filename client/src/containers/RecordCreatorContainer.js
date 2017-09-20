@@ -6,6 +6,7 @@ import formActions from '../actions/form-actions';
 import selectors from '../selectors';
 
 const mapStateToProps = state => ({
+  isAbleToAddContacts: selectors.isAbleToAddContacts(state),
   isContactValid: selectors.isFormContactValid(state),
   isCreatingContact: selectors.isCreatingContact(state),
   isCreatingOrganisation: selectors.isCreatingOrganisation(state),

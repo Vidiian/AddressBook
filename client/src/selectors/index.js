@@ -33,6 +33,7 @@ const getOrganisation = (state, _id) => {
 const getOrganisationContacts = (state, organisationId) => (
   getContactList(state).filter(contact => contact.organisation === organisationId)
 );
+const isAbleToAddContacts = (state) => getOrganisationList(state).length > 0;
 
 export default {
   getContact,
@@ -53,6 +54,7 @@ export default {
   getSelectedContact,
   getSelectedDisplayType,
   getSelectedOrganisation,
+  isAbleToAddContacts,
   isCreatingContact,
   isCreatingOrganisation,
   isEditingContact,
